@@ -1,0 +1,30 @@
+{
+  "name": "exam-prep",
+  "version": "1.0.0",
+  "description": "Quiz app for exam preparations",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ps222nq/exam-prep.git"
+  },
+  "keywords": [
+    "quiz",
+    "exam",
+    "itil"
+  ],
+  "author": "Pepyn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ps222nq/exam-prep/issues"
+  },
+  "homepage": "https://github.com/ps222nq/exam-prep#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.8.0",
+    "mocha": "^4.0.1"
+  }
+}
