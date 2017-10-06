@@ -5,30 +5,33 @@
         <legend>{{questionText}}</legend>
             <div class="form-check">
                 <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="{{questionId}}" value="A" >
-                    {{alternativeA}}
+                    <input type="radio" class="form-check-input" name="{{questionId}}" value="{{alternatives.0.answerAlternativeId}}" >
+                    {{alternatives.0.answerAlternativeText}}
                 </label>
             </div>
 
             <div class="form-check">
                 <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="{{questionId}}"  value="B" >
-                    {{alternativeB}}
+                    <input type="radio" class="form-check-input" name="{{questionId}}"  value="{{alternatives.1.answerAlternativeId}}" >
+                    {{alternatives.1.answerAlternativeText}}
                 </label>
             </div>
 
             <div class="form-check">
                 <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="{{questionId}}"  value="C" >
-                    {{alternativeC}}
+                    <input type="radio" class="form-check-input" name="{{questionId}}"  value="{{alternatives.2.answerAlternativeId}}" >
+                    {{alternatives.2.answerAlternativeText}}
                 </label>
             </div>
 
             <div class="form-check">
                 <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="{{questionId}}"  value="D" >
-                    {{alternativeD}}
+                    <input type="radio" class="form-check-input" name="{{questionId}}"  value="{{alternatives.3.answerAlternativeId}}" >
+                    {{alternatives.3.answerAlternativeText}}
                 </label>
             </div>
     </fieldset>
-{{/each}}    
+{{/each}}
+
+<button>
+</button>    
