@@ -1,0 +1,34 @@
+<h1>Quiz</h1>
+
+{{#each questions}}    
+    <fieldset>
+        <legend>{{questionText}}</legend>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="{{questionId}}" value="A" >
+                    {{alternativeA}}
+                </label>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="{{questionId}}"  value="B" >
+                    {{alternativeB}}
+                </label>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="{{questionId}}"  value="C" >
+                    {{alternativeC}}
+                </label>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="{{questionId}}"  value="D" >
+                    {{alternativeD}}
+                </label>
+            </div>
+    </fieldset>
+{{/each}}    

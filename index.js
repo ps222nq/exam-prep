@@ -33,6 +33,34 @@ app.get('/', function(req, res) {
     res.render('home/home');
 });
 
+app.get('/quiz', function(req, res){
+    let data = {questions: [
+        {
+            questionText: "Is this a question?",
+            questionId: 1,
+            alternativeA: "first alternative",
+            alternativeB: "second alternative",
+            alternativeC: "third alternative",
+            alternativeD: "lastAlternative"
+        },
+        {
+            questionText: "Is this the second question?",
+            questionId: 2,
+            alternativeA: "first alternative again",
+            alternativeB: "second alternative again",
+            alternativeC: "hejsan",
+            alternativeD: "hoppsan"
+        }
+    ]};
+
+    res.render('home/quiz', data)
+});
+
+app.use(function (err, req, res, next) {
+    console.error(err.stack)
+    res.status(404).render('error/404');
+});
+
 app.listen(port, function() {
     console.log('server listening on port ' + port);
 });
